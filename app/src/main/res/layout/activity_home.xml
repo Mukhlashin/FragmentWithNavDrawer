@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/txt_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment 1"
+        android:onClick="btn1"/>
+
+    <Button
+        android:id="@+id/btn_fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment 2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative_container"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ini Akan Ditimpa!"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
